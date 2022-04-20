@@ -1,4 +1,4 @@
-package ex00;
+package ex03;
 
 import java.util.UUID;
 enum Category {
@@ -62,5 +62,16 @@ public class Transaction {
 
     public Integer getTransferAmount() {
         return transferAmount;
+    }
+
+    @Override
+    public String toString() {
+        return "Transaction{" +
+                "identifier=" + identifier +
+                ", recipient=" + recipient +
+                ", sender=" + sender +
+                ", category=" + category +
+                ", transferAmount=" + transferAmount +
+                '}';
     }
 }

@@ -3,9 +3,14 @@ package ex02;
 import java.util.Arrays;
 
 public class UsersArrayList implements UserList{
-    private User[] users = new User[10];
-    private Integer size = 0;
-    private Integer capacity = 10;
+    private User[] users;
+    private Integer size;
+    private Integer capacity;
+    public UsersArrayList() {
+        users = new User[10];
+        size = 0;
+        capacity = 10;
+    }
     @Override
     public void addUser(User user) {
         if (size == capacity) {
@@ -30,7 +35,7 @@ public class UsersArrayList implements UserList{
             if(id == users[i].getId())
                 return users[i];
         }
-        return null;
+        throw new UserNotFoundException(id);
     }
 
     @Override

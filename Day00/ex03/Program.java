@@ -28,7 +28,7 @@ public class Program {
                     int i = 1;
                     while (i < 5 && scanner.hasNextInt()) {
                         value = scanner.nextInt();
-						if(value < MIN_GRADE || MAX_GRADE > 9) {
+						if(value < MIN_GRADE || value > MAX_GRADE) {
 							System.err.println("IllegalArgument");
 							System.exit(-1);
 						}
