@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fd76246e-5b49-4423-ad4b-374b8ab8951d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/../Day01/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day01/src/ex02/UserNotFoundException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day01/src/ex03/Transaction.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Day01/src/ex03/TransactionNotFoundException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ex03/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/ex03/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day01/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day01/out/production/Day01/ex02/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/out/production/Day01/ex02/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day01/out/production/Day01/ex02/UsersArrayList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/out/production/Day01/ex02/UsersArrayList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day01/src/ex00/Transaction.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/src/ex00/Transaction.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day01/src/ex02/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/src/ex02/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day01/src/ex02/UsersArrayList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/src/ex02/UsersArrayList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/out/production/Day01/ex03/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/out/production/Day01/ex03/Program.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/out/production/Day01/ex03/TransactionsLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/out/production/Day01/ex03/TransactionsLinkedList.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Day01/src/ex03/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/src/ex03/Program.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../Day01/src/ex03/TransactionsLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/src/ex03/TransactionsLinkedList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day01/src/ex03/TransactionsList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/src/ex03/TransactionsList.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -48,6 +39,7 @@
       <option name="presentableId" value="Default" />
       <updated>1650451740692</updated>
       <workItem from="1650451742139" duration="296000" />
+      <workItem from="1650470372107" duration="171000" />
     </task>
     <servers />
   </component>

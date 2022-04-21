@@ -24,34 +24,68 @@ public class TransactionsLinkedList implements TransactionsList{
     }
     @Override
     public void addTransaction(Transaction transaction) {
+        Node current = new Node(null, transaction, null);
         if(first == null) {
-            this.first = new Node(null, transaction, null);
-            this.last = first;
-            this.size++;
+            first = current;
+            last = current;
+            size++;
         } else {
-            this.last = new Node(this.last, transaction, null);
+            last.next = current;
+            current.prev = last;
+            last = last.next;
             this.size++;
         }
     }
 
     @Override
     public void removeTransactionById(UUID identifier) {
+        Node tmp = first;
+        while(tmp != null) {
+            if(tmp.transaction.getIdentifier() == identifier) {
+                Node element = new Node(tmp.prev, tmp.transaction, tmp.next);
 
+                if(element.prev == null) {
+                    first = element.next;
+                } else {
+                    element.prev.next = element.next;
+                    tmp.prev = null;
+                }
+
+                if(element.next == null) {
+                    last = element.prev;
+                } else {
+                    element.next.prev = element.prev;
+                    tmp.next = null;
+                }
+
+                tmp.transaction = null;
+                size--;
+            }
+            tmp = tmp.next;
+        }
     }
 
     @Override
-    public void toArray(Transaction[] transactions) {
-
+    public Transaction[] toArray() {
+        Transaction[] transactions = new Transaction[size];
+        Node tmp = first;
+        int i = 0;
+        while(tmp != null) {
+            transactions[i] = tmp.transaction;
+            tmp = tmp.next;
+            i++;
+        }
+        return transactions;
     }
-
-
-
 
     public void print() {
         Node tmp = first;
-        while(tmp != null && tmp.next != null) {
+        while(tmp != null) {
             System.out.println(tmp.transaction.toString());
             tmp = tmp.next;
         }
+    }
+    public Integer getSize() {
+        return size;
     }
 }
