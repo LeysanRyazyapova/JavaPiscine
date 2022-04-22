@@ -1,18 +1,17 @@
-package ex00;
-
 public class Program {
     public static void main(String[] args) throws InterruptedException {
 
-        String[] str = args[0].split("=");
-
         int numberOfRepeat = 0;
 
-        if(str[1].matches("[+-]?\\d+")) {
-            numberOfRepeat = Integer.parseInt(str[1]);
+        if(args.length < 1) {
+            System.err.println("Wrong argument");
+            System.exit(-1);
+        }
+        if(args[0].matches("--count=\\d+")) {
+            numberOfRepeat = Integer.parseInt(args[0].split("=")[1]);
         }
 
         int finalNumberOfRepeat = numberOfRepeat;
-
         Thread myThread1 = new Thread(new Runnable(){
 
             @Override

@@ -1,4 +1,3 @@
-package ex02;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -36,7 +35,7 @@ public class Program {
         Random random = new Random();
 
         for (int i = 0; i < arraySize; i++) {
-            array[i] = random.nextInt(1000);
+            array[i] = random.nextInt(2000) - 1000;
         }
 
         for(int i = 0; i < array.length; i++) {
@@ -85,6 +84,8 @@ class Sum implements Runnable {
             sum += array[i];
         }
         System.out.println("Thread " + (index + 1) + ": from " + from + " to " + to + " sum is " + sum);
-        Program.sumAll += sum;
+        synchronized (this) {
+            Program.sumAll += sum;
+        }
     }
 }

@@ -1,4 +1,3 @@
-package ex01;
 
 import ex01.ProducerConsumer;
 
