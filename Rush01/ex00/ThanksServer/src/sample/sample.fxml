@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.GridPane?>
+
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/18" fx:controller="sample.Controller">
+   <children>
+      <AnchorPane prefHeight="300.0" prefWidth="300.0">
+         <children>
+            <ImageView fitHeight="306.0" fitWidth="600.0" layoutY="-1.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/images/field.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="29.0" fitWidth="23.0" layoutX="141.0" layoutY="244.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/images/player.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="36.0" fitWidth="22.0" layoutX="119.0" layoutY="29.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/images/enemy.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="11.0" fitWidth="104.0" layoutX="194.0" layoutY="9.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/images/life.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="134.0" layoutX="191.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/images/border.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="97.0" layoutX="8.0" layoutY="286.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/images/life.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="17.0" fitWidth="134.0" layoutX="8.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../../../../../../Downloads/images/border.png" />
+               </image>
+            </ImageView>
+         </children>
+      </AnchorPane>
+   </children>
+</GridPane>

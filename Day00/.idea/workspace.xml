@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fd76246e-5b49-4423-ad4b-374b8ab8951d" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../Day01/out/production/Day01/ex03/Program.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/out/production/Day01/ex03/Program.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day01/out/production/Day01/ex03/TransactionsLinkedList.class" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/out/production/Day01/ex03/TransactionsLinkedList.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day01/src/ex03/Program.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/src/ex03/Program.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Day01/src/ex03/TransactionsLinkedList.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Day01/src/ex03/TransactionsLinkedList.java" afterDir="false" />
-    </list>
+    <list default="true" id="fd76246e-5b49-4423-ad4b-374b8ab8951d" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -40,6 +35,7 @@
       <updated>1650451740692</updated>
       <workItem from="1650451742139" duration="296000" />
       <workItem from="1650470372107" duration="171000" />
+      <workItem from="1651723901376" duration="30000" />
     </task>
     <servers />
   </component>
