@@ -1,4 +1,4 @@
-package ex00;
+//package ex00;
 
 import java.util.UUID;
 enum Category {
@@ -12,16 +12,16 @@ public class Transaction {
     private Category category;
     private Integer transferAmount;
 
-    public Transaction(UUID identifier, User recipient, User sender, Category category, Integer transferAmount) {
-        if(Category.DEBITS == category && transferAmount >= 0 || Category.CREDITS == category && transferAmount < 0) {
-            this.identifier = identifier;
-            this.recipient = recipient;
-            this.sender = sender;
-            this.category = category;
-            this.transferAmount = transferAmount;
-        } else {
-            System.out.println("Category of transaction is wrong");
-        }
+    public Transaction(UUID identifier, User recipient, User sender, Integer transferAmount) {
+        if(transferAmount < 0)
+            this.category = Category.CREDITS;
+        if(transferAmount >= 0);
+            this.category = Category.DEBITS;
+        this.identifier = identifier;
+        this.recipient = recipient;
+        this.sender = sender;
+        this.category = category;
+        this.transferAmount = transferAmount;
     }
 
     public void setIdentifier(UUID identifier) {
@@ -62,5 +62,16 @@ public class Transaction {
 
     public Integer getTransferAmount() {
         return transferAmount;
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "Transaction{" +
+                "identifier=" + identifier +
+                ",\n recipient=" + recipient +
+                ",\n sender=" + sender +
+                ",\n category=" + category +
+                ", transferAmount=" + transferAmount +
+                '}';
     }
 }

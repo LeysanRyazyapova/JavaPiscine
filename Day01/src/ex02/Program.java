@@ -1,4 +1,4 @@
-package ex02;
+//package ex02;
 
 public class Program {
     public static void main(String[] args) {
@@ -24,10 +24,10 @@ public class Program {
             users.addUser(user6);
             users.addUser(user7);
 
-            //System.out.println(users.toString());
             System.out.println("Number of users: " + users.numberOfUsers());
             System.out.println("User with id 1: " + users.getUserById(1));
             System.out.println("User in index 5: " + users.getUserByIndex(5));
+            System.out.println("Users capacity: " + users.getCapacity());
             users.addUser(user8);
             users.addUser(user9);
             users.addUser(user10);
@@ -36,6 +36,7 @@ public class Program {
             System.out.println("User in id 12: " + users.getUserById(12));
             System.out.println("User in id 13: " + users.getUserById(13));
             System.out.println("Number of users: " + users.numberOfUsers());
+            System.out.println("Users capacity: " + users.getCapacity());
         } catch (UserNotFoundException e) {
             System.out.println(e.getMessage());
         }

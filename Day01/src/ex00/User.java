@@ -1,16 +1,17 @@
-package ex00;
+//package ex00;
 
 public class User {
     private Integer id;
     private String name;
     private Integer balance;
     User(Integer id, String name, Integer balance) {
-        if(balance >= 0) {
-            this.id = id;
-            this.name = name;
-            this.balance = balance;
-        } else
+        if(balance < 0) {
+            this.balance = 0;
             System.out.println("You can't create user with negative balance");
+        } else
+            this.balance = balance;
+        this.id = id;
+        this.name = name;
     }
 
     public Integer getId() {
@@ -38,5 +39,14 @@ public class User {
             System.out.println("You can't set negative balance");
         else
             this.balance = balance;
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }

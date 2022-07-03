@@ -1,4 +1,4 @@
-package ex01;
+//package ex01;
 
 public class User {
     private Integer id;
@@ -34,5 +34,14 @@ public class User {
             System.out.println("You can't set negative balance");
         else
             this.balance = balance;
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "User{" +
+                "id=" + id +
+                ", name='" + name + '\'' +
+                ", balance=" + balance +
+                '}';
     }
 }

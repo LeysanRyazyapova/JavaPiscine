@@ -1,4 +1,4 @@
-package ex02;
+//package ex02;
 
 import java.util.Arrays;
 
@@ -48,5 +48,18 @@ public class UsersArrayList implements UserList{
     @Override
     public Integer numberOfUsers() {
         return size;
+    }
+
+    public Integer getCapacity() {
+        return capacity;
+    }
+
+    @java.lang.Override
+    public java.lang.String toString() {
+        return "UsersArrayList{" +
+                "users=" + java.util.Arrays.toString(users) +
+                ", size=" + size +
+                ", capacity=" + capacity +
+                '}';
     }
 }
