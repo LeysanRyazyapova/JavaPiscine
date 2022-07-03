@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Program {
     private static final int MAX_SYMBOLS_COUNT = 10;
-    private static final int SYMBOLS_IN_UNICODE = 65535;
+    private static final int SYMBOLS_IN_UNICODE = 65536;
     private static final int BAR_COUNT = 10;
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
